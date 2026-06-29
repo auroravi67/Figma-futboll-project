@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Standings | Futboll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">FUTB<span class="ball">⚽</span>LL</div>
+
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html"><span class="icon">🏠</span>Home</a>
+    <a href="table.html" class="active"><span class="icon">📊</span>Table</a>
+    <a href="matches.html"><span class="icon">⚽</span>Matches</a>
+    <a href="predictions.html"><span class="icon">🏆</span>Bracket</a>
+    <a href="news.html"><span class="icon">📰</span>News</a>
+    <a href="favorites.html"><span class="icon">★</span>Favorite</a>
+    <a href="about.html"><span class="icon">ℹ️</span>About</a>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">Group Stage Standings</h1>
+    <p class="page-subtitle">
+      The official FIFA World Cup 2026 groups (Final Draw, Dec 5, 2025). Pld = Played, GD = Goal Difference, Pts = Points are our own predicted final numbers.
+      The top 2 teams from every group plus the best 8 third-place teams move on to the Round of 32.
+    </p>
+    <p class="page-subtitle" id="matchdayInfo" style="margin-top:-14px;"></p>
+
+    <div class="legend">
+      <span><span class="dot qualified"></span>Qualified (1st/2nd)</span>
+      <span><span class="dot wildcard"></span>Qualified as best-3rd wildcard</span>
+      <span><span class="dot out"></span>Eliminated</span>
+    </div>
+
+    <div class="groups-grid" id="groupsContainer">
+      <!-- JS fills this in with one card per group, see renderGroups() in script.js -->
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

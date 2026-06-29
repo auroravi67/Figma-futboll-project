@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictions | Futboll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">FUTB<span class="ball">⚽</span>LL</div>
+
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html"><span class="icon">🏠</span>Home</a>
+    <a href="table.html"><span class="icon">📊</span>Table</a>
+    <a href="matches.html"><span class="icon">⚽</span>Matches</a>
+    <a href="predictions.html" class="active"><span class="icon">🏆</span>Bracket</a>
+    <a href="news.html"><span class="icon">📰</span>News</a>
+    <a href="favorites.html"><span class="icon">★</span>Favorite</a>
+    <a href="about.html"><span class="icon">ℹ️</span>About</a>
+  </nav>
+
+  <main class="container wide">
+    <h1 class="page-title">Knockout Predictions</h1>
+    <p class="page-subtitle">Our predicted bracket, Round of 32 through the Final. Scroll sideways on mobile to see every round. Winners are highlighted in green.</p>
+
+    <div id="bracketContainer">
+      <!-- JS fills this in with one column per round, see renderBracket() in script.js -->
+    </div>
+
+    <div class="champion-banner" id="championBanner">
+      <!-- JS fills this in based on the Final match result -->
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Futboll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">FUTB<span class="ball">⚽</span>LL</div>
+
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html"><span class="icon">🏠</span>Home</a>
+    <a href="table.html"><span class="icon">📊</span>Table</a>
+    <a href="matches.html"><span class="icon">⚽</span>Matches</a>
+    <a href="predictions.html"><span class="icon">🏆</span>Bracket</a>
+    <a href="news.html" class="active"><span class="icon">📰</span>News</a>
+    <a href="favorites.html"><span class="icon">★</span>Favorite</a>
+    <a href="about.html"><span class="icon">ℹ️</span>About</a>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">📰 Hot News</h1>
+    <p class="page-subtitle">The biggest stories from the 2026 World Cup.</p>
+
+    <!-- Filters — category only, no heat emoji selector -->
+    <div class="news-filters">
+      <div class="news-category-filters">
+        <button class="news-filter-btn active" data-filter="all">All</button>
+        <button class="news-filter-btn" data-filter="Final">Final</button>
+        <button class="news-filter-btn" data-filter="Semifinal">Semis</button>
+        <button class="news-filter-btn" data-filter="Quarterfinal">Quarters</button>
+        <button class="news-filter-btn" data-filter="Round of 16">R16</button>
+        <button class="news-filter-btn" data-filter="Group Stage">Groups</button>
+        <button class="news-filter-btn" data-filter="Event Info">Info</button>
+      </div>
+    </div>
+
+    <!-- News cards rendered by JS -->
+    <div id="newsContainer"></div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matches | Futboll</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">FUTB<span class="ball">⚽</span>LL</div>
+
+    </div>
+  </header>
+
+  <nav class="main-nav">
+    <a href="index.html"><span class="icon">🏠</span>Home</a>
+    <a href="table.html"><span class="icon">📊</span>Table</a>
+    <a href="matches.html" class="active"><span class="icon">⚽</span>Matches</a>
+    <a href="predictions.html"><span class="icon">🏆</span>Bracket</a>
+    <a href="news.html"><span class="icon">📰</span>News</a>
+    <a href="favorites.html"><span class="icon">★</span>Favorite</a>
+    <a href="about.html"><span class="icon">ℹ️</span>About</a>
+  </nav>
+
+  <main class="container">
+    <h1 class="page-title">Matches</h1>
+    <p class="page-subtitle">Every knockout stage match, from the Round of 32 to the Final. Use the dropdown to filter by round.</p>
+
+    <div class="filter-row">
+      <label for="roundFilter">Round:</label>
+      <select id="roundFilter">
+        <option value="all">All Rounds</option>
+        <option value="Round of 32">Round of 32</option>
+        <option value="Round of 16">Round of 16</option>
+        <option value="Quarterfinals">Quarterfinals</option>
+        <option value="Semifinals">Semifinals</option>
+        <option value="Third Place Playoff">Third Place Playoff</option>
+        <option value="Final">Final</option>
+      </select>
+    </div>
+
+    <div class="match-list" id="matchesContainer">
+      <!-- JS fills this in, see renderMatches() in script.js -->
+    </div>
+
+    <!-- Placeholder section for later -->
+    <div class="highlights-placeholder">
+      <div class="big-emoji">🎥</div>
+      <p>Match Highlights &amp; Live Stats</p>
+      <p class="placeholder-text">(Placeholder — this is where video highlights, a live score widget, or match center stats could go later.)</p>
+    </div>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
